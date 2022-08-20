@@ -1,0 +1,113 @@
+.page-footer {
+  background: $footerBackground;
+  padding: 60px 0px;
+}
+
+.street {
+  font-size: 14px;
+  color: $whiteColor;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+}
+.footer-contacts {
+  color: $footerContacts;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 9px;
+  display: block;
+
+  &:hover,
+  &:focus {
+    color: $mainBrandColor;
+  }
+}
+
+.footer-socials-section {
+  margin-left: 70px;
+  margin-right: 78px;
+}
+.footer-headers {
+  font-weight: 700;
+  font-size: 14px;
+  color: $whiteColor;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 10px;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: $mainBrandColor;
+    }
+  }
+
+  &__icon {
+    fill: $whiteColor;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    padding-left: 16px;
+    color: $whiteColor;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border: 1px solid $mainBrandColor;
+    }
+  }
+}
+
+.newsletter-button {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding-left: 42px;
+  padding-right: 28px;
+  margin-left: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background: $mainBrandColor;
+  color: $whiteColor;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    display: inline-flex;
+    margin-left: 24px;
+  }
+  &:hover {
+    transform: scale(1.03);
+  }
+}

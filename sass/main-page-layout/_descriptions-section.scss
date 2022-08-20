@@ -1,0 +1,27 @@
+.descriptions-section {
+  padding-top: 94px;
+
+  &__list {
+    display: flex;
+  }
+  &__icons {
+    height: 270px;
+  }
+  &__headers {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    width: 270px;
+  }
+  &__texts {
+    font-size: 14px;
+    font-weight: 400;
+    color: $paragraphColor;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+  }
+}
+
+

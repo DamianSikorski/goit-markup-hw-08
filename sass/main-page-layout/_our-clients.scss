@@ -1,0 +1,29 @@
+.clients-list {
+  display: flex;
+  gap: 30px;
+
+  &__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $svgsMainColor;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: $mainBrandColor;
+
+      .clients-list__icon {
+        fill: $mainBrandColor;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $svgsMainColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

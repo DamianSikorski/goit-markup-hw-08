@@ -1,0 +1,26 @@
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: $blackColor;
+  width: 1600px;
+}
+*,
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+address {
+  font-style: normal;
+}
