@@ -196,7 +196,7 @@ address {
   height: 28px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav__list {
     display: none;
   }
@@ -208,7 +208,7 @@ address {
     margin-right: 0px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-toggle {
     display: none;
   }
@@ -777,4 +777,4 @@ address {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
+}/*# sourceMappingURL=main.css.map */
