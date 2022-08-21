@@ -3,11 +3,12 @@
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
-@import "./base/button";
-@import "./base/primary-header";
-@import "./base/logo";
-@import "./base/visually-hidden";
-@import "./base/circular-button";
+
+@import "./components/button";
+@import "./components/primary-header";
+@import "./components/logo";
+@import "./components/visually-hidden";
+@import "./components/circular-button";
 
 @import "./main-page-layout/header";
 @import "./main-page-layout/hero";
