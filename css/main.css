@@ -683,6 +683,14 @@ address {
   color: #2196f3;
 }
 
+@media (max-width: 400px) {
+  .mobile-socials-list {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 .buttons-section {
   padding-top: 94px;
   padding-bottom: 50px;
