@@ -6,6 +6,7 @@ hamburger.addEventListener("click", () => {
 });
 
 const closeMenu = document.querySelector(".close-menu");
+
 closeMenu.addEventListener("click", () => {
   navMenu.classList.remove("active");
 });
