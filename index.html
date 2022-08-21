@@ -20,7 +20,7 @@
   <body>
     <!-- <section class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="circular-button" data-modal-close>
+        <button class="circular-button modal-window__circular-button" data-modal-close>
           <svg width="11" height="11">
             <use href="images/icons.svg#icon-close-modal"></use>
           </svg>
@@ -110,8 +110,8 @@
             >
               <svg
                 class="header-contacts-list__icon header-contacts-list__icon--alignment"
-                width="16"
-                height="12"
+                width="14"
+                height="10"
               >
                 <use href="images/icons.svg#icon-email"></use>
               </svg>
@@ -120,16 +120,61 @@
           </li>
           <li>
             <a class="header-contacts-list__link" href="tel:+48111111111">
-              <svg class="header-contacts-list__icon" width="10" height="16">
+              <svg class="header-contacts-list__icon" width="10" height="14">
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
             >
           </li>
         </ul>
-        <button class="menu-toggle"></button>
+        <button class="menu-toggle open-menu">
+          <svg class="menu-toggle__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <section class="nav-mobile-section nav-mobile-active">
+      <button
+        class="circular-button nav-mobile-section__circular-button close-menu"
+      >
+        <svg width="19" height="19">
+          <use href="images/icons.svg#icon-close-mobile"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="nav-mobile-list">
+          <li>
+            <a class="nav-mobile-list__link" href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="nav-mobile-list__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li><a class="nav-mobile-list__link" href="link">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="mobile-contacts-list">
+        <li>
+          <a
+            class="mobile-contacts-list__link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="mobile-contacts-list__link" href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials-list">
+        <li><a class="mobile-socials-list__link">Instagram</a></li>
+        <li><a class="mobile-socials-list__link">Twitter</a></li>
+        <li><a class="mobile-socials-list__link">Facebook</a></li>
+        <li><a class="mobile-socials-list__link">LinkedIn</a></li>
+      </ul>
+    </section>
     <main>
       <!-- <section class="hero">
         <div class="container">
@@ -595,5 +640,6 @@
       </div>
     </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
