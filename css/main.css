@@ -30,11 +30,11 @@ address {
 }
 
 .container {
-  max-width: 450px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container--flex {
@@ -90,6 +90,38 @@ address {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+@media (max-width: 767px) {
+  .nav__list {
+    display: none !important;
+  }
+  .header-contacts-list {
+    display: none !important;
+  }
+  .logo {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 .page-header {
