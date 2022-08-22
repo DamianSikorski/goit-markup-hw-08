@@ -3,9 +3,21 @@
 
   &__list {
     display: flex;
+    gap: 30px;
   }
-  &__icons {
-    height: 270px;
+  &__icon-background {
+    width: 270px;
+    height: 120px;
+    background-color: $brandBackgroundColor;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    fill: $mainBrandColor;
+    height: 70px;
   }
   &__headers {
     font-weight: 700;
@@ -23,5 +35,84 @@
     width: 270px;
   }
 }
+@media screen and (max-width: 768px) {
+  .descriptions-section {
+    &__list {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
 
+    &__icon-background {
+      width: 450px;
+    }
+    &__headers {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      width: 270px;
+      text-align: center;
+    }
+    &__texts {
+      font-size: 14px;
+      font-weight: 400;
+      color: $paragraphColor;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
 
+@media screen and(max-width: 450px) {
+  .descriptions-section__icon-background {
+    width: 360px;
+  }
+  .descriptions-section__texts {
+    width: 360px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .descriptions-section {
+    &__list {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    &__icon-background {
+      display: flex;
+      justify-content: center;
+      background-color: $brandBackgroundColor;
+      width: 354px;
+      border-radius: 4px;
+    }
+    &__headers {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    &__texts {
+      font-size: 14px;
+      font-weight: 400;
+      color: $paragraphColor;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      margin: 0;
+    }
+  }
+  .container {
+    width: 769px;
+  }
+}
