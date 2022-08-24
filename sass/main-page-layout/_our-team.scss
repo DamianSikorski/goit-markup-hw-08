@@ -4,7 +4,9 @@
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .team-member-card {
@@ -59,30 +61,16 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .team-list {
-    flex-wrap: wrap;
-  }
-  .team-member-card__img {
-    width: 450px;
-    height: 460px;
-  }
-  .team-list {
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) {
-  .team-member-card__img {
-    width: 354px;
-    height: 374px;
-  }
-  .team-list {
-    flex-wrap: wrap;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .team-member-card__img {
-    width: 270px;
-    height: 260px;
+  .team-list {
+    width: auto;
   }
 }
