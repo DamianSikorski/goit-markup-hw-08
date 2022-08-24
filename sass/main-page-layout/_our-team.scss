@@ -15,6 +15,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  width: 450px;
+  &__img {
+    width: 450px;
+  }
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -68,9 +72,21 @@
     margin-right: auto;
     justify-content: center;
   }
+  .team-member-card {
+    width: 354px;
+    &__img {
+      width: 354px;
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .team-list {
     width: auto;
+  }
+  .team-member-card {
+    width: 270px;
+    &__img {
+      width: 270px;
+    }
   }
 }

@@ -451,6 +451,10 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  width: 450px;
+}
+.team-member-card__img {
+  width: 450px;
 }
 .team-member-card__name {
   font-weight: 500;
@@ -500,10 +504,22 @@ address {
     margin-right: auto;
     justify-content: center;
   }
+  .team-member-card {
+    width: 354px;
+  }
+  .team-member-card__img {
+    width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team-list {
     width: auto;
+  }
+  .team-member-card {
+    width: 270px;
+  }
+  .team-member-card__img {
+    width: 270px;
   }
 }
 .clients-list {
