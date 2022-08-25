@@ -18,9 +18,12 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <section class="backdrop is-hidden" data-modal>
+    <section class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="circular-button modal-window__circular-button" data-modal-close>
+        <button
+          class="circular-button modal-window__circular-button"
+          data-modal-close
+        >
           <svg width="11" height="11">
             <use href="images/icons.svg#icon-close-modal"></use>
           </svg>
@@ -28,7 +31,7 @@
         <h2 class="modal-window__header">
           Zostaw swoje dane w formularzu poniżej
         </h2>
-        <form>
+        <form class="modal-window__form">
           <label class="modal-labels">
             Imie
             <input
@@ -85,8 +88,8 @@
           </button>
         </form>
       </div>
-    </section> -->
-    <header class="page-header">
+    </section>
+    <header>
       <div class="container container--flex">
         <nav class="nav">
           <a href="index.html" class="logo nav__logo"
@@ -133,48 +136,50 @@
           </svg>
         </button>
       </div>
-    </header>
-    <section class="nav-mobile-section nav-mobile-active">
-      <button
-        class="circular-button nav-mobile-section__circular-button close-menu"
-      >
-        <svg width="19" height="19">
-          <use href="images/icons.svg#icon-close-mobile"></use>
-        </svg>
-      </button>
-      <nav>
-        <ul class="nav-mobile-list">
+      <section class="nav-mobile-section">
+        <button
+          class="circular-button nav-mobile-section__circular-button close-menu"
+        >
+          <svg width="19" height="19">
+            <use href="images/icons.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="nav-mobile-list">
+            <li>
+              <a class="nav-mobile-list__link" href="index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="nav-mobile-list__link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="nav-mobile-list__link" href="link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
           <li>
-            <a class="nav-mobile-list__link" href="index.html">Agencja</a>
+            <a
+              class="mobile-contacts-list__link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
           </li>
           <li>
-            <a class="nav-mobile-list__link" href="portfolio.html">Portfolio</a>
+            <a class="mobile-contacts-list__link" href="tel:+48111111111">
+              +48 111 111 111</a
+            >
           </li>
-          <li><a class="nav-mobile-list__link" href="link">Kontakt</a></li>
         </ul>
-      </nav>
-      <ul class="mobile-contacts-list">
-        <li>
-          <a
-            class="mobile-contacts-list__link"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="mobile-contacts-list__link" href="tel:+48111111111">
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-socials-list">
-        <li><a class="mobile-socials-list__link">Instagram</a></li>
-        <li><a class="mobile-socials-list__link">Twitter</a></li>
-        <li><a class="mobile-socials-list__link">Facebook</a></li>
-        <li><a class="mobile-socials-list__link">LinkedIn</a></li>
-      </ul>
-    </section>
+        <ul class="mobile-socials-list">
+          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Instagram</a></li>
+          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Twitter</a></li>
+          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Facebook</a></li>
+          <li><a class="mobile-socials-list__link">LinkedIn</a></li>
+        </ul>
+      </section>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -635,24 +640,22 @@
     </main>
     <footer class="page-footer">
       <div class="container container--wrap">
-        <div class="page-footer__contacts-section">
-          <a href="index.html" class="logo page-footer__logo"
+        <div class="contacts-section">
+          <a href="index.html" class="logo contacts-section__logo"
             >Web<span class="logo--white">Studio</span></a
           >
           <address>
-            <ul class="footer-contacts-list">
-              <li class="footer-contacts-list__street">
+            <ul class="contacts-section__list">
+              <li class="contacts-section__street">
                 m. Warszawa, Aleje Jerozolimskie 21
               </li>
               <li>
-                <a
-                  class="footer-contacts-list__link"
-                  href="mailto:info@example.com"
+                <a class="contacts-section__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="footer-contacts-list__link" href="tel:+48111111111"
+                <a class="contacts-section__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -661,31 +664,47 @@
         </div>
         <div class="footer-socials-section">
           <h3 class="footer-headers">Dołącz do nas</h3>
-          <ul class="footer-socials-list">
+          <ul class="footer-socials-section__list">
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-twiiter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>

@@ -1,21 +1,19 @@
 .page-footer {
   background: $footerBackground;
   padding: 60px 0px;
+}
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
   &__logo {
     margin-bottom: 20px;
   }
-  &__contacts-section {
+  &__list {
     display: flex;
     flex-direction: column;
     place-items: center;
   }
-}
-
-.footer-contacts-list {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-
   &__street {
     font-size: 14px;
     color: $whiteColor;
@@ -39,10 +37,6 @@
   }
 }
 
-.footer-socials-section {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
 .footer-headers {
   font-weight: 700;
   font-size: 14px;
@@ -54,12 +48,16 @@
   text-align: center;
 }
 
-.footer-socials-list {
-  display: flex;
-  gap: 10px;
-  width: 206px;
-  margin-left: auto;
-  margin-right: auto;
+.footer-socials-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  &__list {
+    display: flex;
+    gap: 10px;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__link {
     width: 44px;
@@ -138,7 +136,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .page-footer__contacts-section {
+  .contacts-section {
     margin-left: auto;
     margin-right: 144px;
   }
@@ -148,6 +146,7 @@
     margin-bottom: 0;
   }
   .newsletter-section {
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 109px;
@@ -169,17 +168,18 @@
   .footer-headers {
     text-align: start;
   }
-  .page-footer__contacts-section {
+  .contacts-section {
     margin-right: 70px;
     place-items: normal;
+    &__list {
+      place-items: normal;
+    }
   }
-  .footer-socials-list {
+  .footer-socials-section__list {
     margin-right: 78px;
   }
   .newsletter-section {
     padding: 0;
-  }
-  .footer-contacts-list {
-    place-items: normal;
+    margin: 0;
   }
 }

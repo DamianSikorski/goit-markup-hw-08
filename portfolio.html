@@ -29,7 +29,7 @@
               <a class="nav__link" href="index.html">Agencja</a>
             </li>
             <li>
-              <a class="nav__link current-side" href="portfolio.html "
+              <a class="nav__link current-side" href="portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -44,8 +44,8 @@
             >
               <svg
                 class="header-contacts-list__icon header-contacts-list__icon--alignment"
-                width="16"
-                height="12"
+                width="14"
+                height="10"
               >
                 <use href="images/icons.svg#icon-email"></use>
               </svg>
@@ -54,14 +54,62 @@
           </li>
           <li>
             <a class="header-contacts-list__link" href="tel:+48111111111">
-              <svg class="header-contacts-list__icon" width="10" height="16">
+              <svg class="header-contacts-list__icon" width="10" height="14">
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
             >
           </li>
         </ul>
+        <button class="menu-toggle open-menu">
+          <svg class="menu-toggle__icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
+      <section class="nav-mobile-section">
+        <button
+          class="circular-button nav-mobile-section__circular-button close-menu"
+        >
+          <svg width="19" height="19">
+            <use href="images/icons.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="nav-mobile-list">
+            <li>
+              <a class="nav-mobile-list__link" href="index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="nav-mobile-list__link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="nav-mobile-list__link" href="link">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts-list">
+          <li>
+            <a
+              class="mobile-contacts-list__link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="mobile-contacts-list__link" href="tel:+48111111111">
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-socials-list">
+          <li><a class="mobile-socials-list__link">Instagram</a></li>
+          <li><a class="mobile-socials-list__link">Twitter</a></li>
+          <li><a class="mobile-socials-list__link">Facebook</a></li>
+          <li><a class="mobile-socials-list__link">LinkedIn</a></li>
+        </ul>
+      </section>
     </header>
     <main>
       <div class="buttons-section">
@@ -103,6 +151,7 @@
                 <img
                   src="images/img8.jpg"
                   alt="Technocrack"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -125,6 +174,7 @@
                 <img
                   src="images/img9.jpg"
                   alt="Grafika New Orlean vs Golden Star"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -149,6 +199,7 @@
                 <img
                   src="images/img10.jpg"
                   alt="Restauracja Seafood"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -171,6 +222,7 @@
                 <img
                   src="images/img11.jpg"
                   alt="Projekt Prime"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -193,6 +245,7 @@
                 <img
                   src="images/img12.jpg"
                   alt="Projekt Boxes"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -215,6 +268,7 @@
                 <img
                   src="images/img13.jpg"
                   alt="Inspiration has no Borders"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -237,6 +291,7 @@
                 <img
                   src="images/img14.jpg"
                   alt="Magazyn Limited Edition"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -259,6 +314,7 @@
                 <img
                   src="images/img15.jpg"
                   alt="Projekt LAB"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -281,6 +337,7 @@
                 <img
                   src="images/img16.jpg"
                   alt="Growing Business"
+                  class="project-card__img"
                   width="370"
                   height="294"
                 />
@@ -303,21 +360,23 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="container container--flex">
-        <div>
-          <a href="index.html" class="logo"
+      <div class="container container--wrap">
+        <div class="contacts-section">
+          <a href="index.html" class="logo contacts-section__logo"
             >Web<span class="logo--white">Studio</span></a
           >
           <address>
-            <ul>
-              <li class="street">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <ul class="contacts-section__list">
+              <li class="contacts-section__street">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
               <li>
-                <a class="footer-contacts" href="mailto:info@example.com"
+                <a class="contacts-section__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="footer-contacts" href="tel:+48111111111"
+                <a class="contacts-section__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
@@ -326,38 +385,54 @@
         </div>
         <div class="footer-socials-section">
           <h3 class="footer-headers">Dołącz do nas</h3>
-          <ul class="footer-socials-list">
+          <ul class="footer-socials-section__list">
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-twiiter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="link" class="footer-socials-list__link">
-                <svg class="footer-socials-list__icon" width="20" height="20">
+              <a href="link" class="footer-socials-section__link">
+                <svg
+                  class="footer-socials-section__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <section>
+        <section class="newsletter-section">
           <h3 class="footer-headers">Zapisz się do newslettera</h3>
           <form class="newsletter-form">
             <input
@@ -368,7 +443,7 @@
               required
             />
             <button class="newsletter-button" type="submit">
-              <span>Zapisz się</span>
+              <span class="newsletter-button__content">Zapisz się</span>
               <svg class="newsletter-button__icon" width="24" height="24">
                 <use href="images/icons.svg#newsletter-icon"></use>
               </svg>
@@ -378,5 +453,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
