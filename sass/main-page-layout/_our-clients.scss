@@ -1,9 +1,11 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 
   &__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid $svgsMainColor;
     border-radius: 4px;
@@ -25,5 +27,25 @@
   &__icon {
     fill: $svgsMainColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 742px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__link {
+      width: 227px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    width: auto;
+
+    &__link {
+      width: 170px;
+    }
   }
 }
