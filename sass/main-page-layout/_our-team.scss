@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member-card {
@@ -69,7 +72,7 @@
 
 @media screen and (min-width: 768px) {
   .team-list {
-    width: 738px;
+    max-width: 738px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -81,11 +84,10 @@
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    width: auto;
+    max-width: 1200px;
   }
 
   .team-member-card__img {
     width: 270px;
   }
 }
-

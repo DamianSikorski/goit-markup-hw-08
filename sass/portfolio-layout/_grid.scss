@@ -2,8 +2,9 @@
   padding-bottom: 60px;
 }
 .grid {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   justify-content: center;
   margin-left: auto;
@@ -12,8 +13,10 @@
 .project-card {
   position: relative;
   overflow: hidden;
+
   &__img {
-    width: 350px;
+    object-fit: cover;
+    width: 100%;
   }
 
   &:hover {
@@ -53,7 +56,7 @@
   padding: 77px 24px;
   position: absolute;
   transform: translatey(100%);
-  margin-bottom: 50px;
+  margin-bottom: 110px;
   bottom: 0;
   left: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,25 +69,11 @@
     color: $whiteColor;
   }
 }
-@media screen and (min-width: 480px) {
-  .grid {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .project-card__img {
-    width: 450px;
-    height: 294px;
-  }
-  .overlay {
-    margin-bottom: 110px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .grid {
-    width: 738px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 738px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -94,12 +83,13 @@
   }
   .overlay {
     padding: 49px 24px;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .grid {
-    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
   }
 
   .project-card__img {

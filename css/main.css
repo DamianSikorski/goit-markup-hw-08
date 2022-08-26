@@ -451,6 +451,9 @@ address {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member-card {
@@ -506,7 +509,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .team-list {
-    width: 738px;
+    max-width: 738px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -517,20 +520,23 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .team-list {
-    width: auto;
+    max-width: 1200px;
   }
   .team-member-card__img {
     width: 270px;
   }
 }
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6%;
   justify-content: center;
 }
 .clients-list__link {
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -552,17 +558,20 @@ address {
 
 @media screen and (min-width: 768px) {
   .clients-list {
-    width: 742px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 742px;
+    gap: 30px;
     margin-left: auto;
     margin-right: auto;
   }
   .clients-list__link {
-    width: 227px;
+    max-width: 227px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-list {
     width: auto;
+    grid-template-columns: repeat(6, 1fr);
   }
   .clients-list__link {
     width: 170px;
@@ -1025,7 +1034,9 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  width: 450px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .buttons-section__button {
   background: #f5f4fa;
@@ -1055,7 +1066,7 @@ address {
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    width: auto;
+    max-width: 738px;
   }
 }
 .grid-section {
@@ -1063,8 +1074,9 @@ address {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   justify-content: center;
   margin-left: auto;
@@ -1076,7 +1088,8 @@ address {
   overflow: hidden;
 }
 .project-card__img {
-  width: 350px;
+  object-fit: cover;
+  width: 100%;
 }
 .project-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1112,7 +1125,7 @@ address {
   padding: 77px 24px;
   position: absolute;
   transform: translatey(100%);
-  margin-bottom: 50px;
+  margin-bottom: 110px;
   bottom: 0;
   left: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1125,23 +1138,10 @@ address {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .grid {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .project-card__img {
-    width: 450px;
-    height: 294px;
-  }
-  .overlay {
-    margin-bottom: 110px;
-  }
-}
 @media screen and (min-width: 768px) {
   .grid {
-    width: 738px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 738px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1150,12 +1150,13 @@ address {
   }
   .overlay {
     padding: 49px 24px;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .grid {
-    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
   }
   .project-card__img {
     width: 370px;
