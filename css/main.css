@@ -314,7 +314,7 @@ address {
   gap: 30px;
 }
 .descriptions-list__icon-background {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -340,17 +340,9 @@ address {
   color: #757575;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 450px;
+  max-width: 450px;
 }
 
-@media screen and (max-width: 460px) {
-  .descriptions-list__icon-background {
-    width: 360px;
-  }
-  .descriptions-list__texts {
-    width: 360px;
-  }
-}
 @media screen and (min-width: 768px) {
   .descriptions-list {
     flex-direction: row;
@@ -362,7 +354,7 @@ address {
     margin-right: auto;
   }
   .descriptions-list__icon-background {
-    width: 354px;
+    max-width: 354px;
   }
   .descriptions-list__headers {
     text-align: start;
@@ -468,7 +460,8 @@ address {
   padding-bottom: 30px;
 }
 .team-member-card__img {
-  width: 450px;
+  object-fit: cover;
+  width: 100%;
 }
 .team-member-card__name {
   font-weight: 500;
@@ -530,21 +523,14 @@ address {
     width: 270px;
   }
 }
-@media screen and (max-width: 460px) {
-  .team-member-card__img {
-    width: 330px;
-  }
-}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 .clients-list__link {
-  width: 160px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -564,15 +550,6 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
-  .clients-list {
-    width: 450px;
-    gap: 30px;
-  }
-  .clients-list__link {
-    width: 210px;
-  }
-}
 @media screen and (min-width: 768px) {
   .clients-list {
     width: 742px;
@@ -962,7 +939,7 @@ address {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #ffffff;
   padding-top: 48px;
   padding-bottom: 48px;
@@ -1048,9 +1025,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  width: 373px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 450px;
 }
 .buttons-section__button {
   background: #f5f4fa;
