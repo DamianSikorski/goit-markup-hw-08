@@ -112,7 +112,7 @@
               href="mailto:info@devstudio.com"
             >
               <svg
-                class="header-contacts-list__icon header-contacts-list__icon--alignment"
+                class="header-contacts-list__icon-mail header-contacts-list__icon--alignment"
                 width="14"
                 height="10"
               >
@@ -123,7 +123,7 @@
           </li>
           <li>
             <a class="header-contacts-list__link" href="tel:+48111111111">
-              <svg class="header-contacts-list__icon" width="10" height="14">
+              <svg class="header-contacts-list__icon-phone">
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -173,9 +173,21 @@
           </li>
         </ul>
         <ul class="mobile-socials-list">
-          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Instagram</a></li>
-          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Twitter</a></li>
-          <li><a class="mobile-socials-list__link mobile-socials-list__decoration">Facebook</a></li>
+          <li>
+            <a class="mobile-socials-list__link mobile-socials-list__decoration"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a class="mobile-socials-list__link mobile-socials-list__decoration"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a class="mobile-socials-list__link mobile-socials-list__decoration"
+              >Facebook</a
+            >
+          </li>
           <li><a class="mobile-socials-list__link">LinkedIn</a></li>
         </ul>
       </section>
@@ -251,28 +263,52 @@
           <ul class="what-we-do-list">
             <li class="what-we-do-list__item">
               <img
-                src="images/img1.jpg"
+                src="images/desktop-aplications.jpg"
                 alt="person writing a code"
                 width="370"
                 height="294"
+                srcset="
+                  images/desktop-aplications@2.jpg 720w,
+                  images/desktop-aplications.jpg   340w
+                "
+                sizes="
+                (min-width:1200px) and (max-width:2400px) 340px,
+                (min-width: 2400px) 720px
+                "
               />
               <h3 class="what-we-do-list__content">Aplikacje komputerowe</h3>
             </li>
             <li class="what-we-do-list__item">
               <img
-                src="images/img2.jpg"
+                src="images/mobile-aplications.jpg"
                 alt="person holding a phone and doing somethnig in laptop"
                 width="370"
                 height="294"
+                srcset="
+                  images/mobile-aplications@2.jpg 720w,
+                  images/mobile-aplications.jpg   340w
+                "
+                sizes="
+                (min-width:1200px) and (max-width:2400px) 340px,
+                (min-width: 2400px) 720px
+                "
               />
               <h3 class="what-we-do-list__content">Aplikacje mobilne</h3>
             </li>
             <li class="what-we-do-list__item">
               <img
-                src="images/img3.jpg"
+                src="images/graphics-solutions.jpg"
                 alt="person picking color"
                 width="370"
                 height="294"
+                srcset="
+                  images/graphics-solutions@2.jpg 720w,
+                  images/graphics-solutions.jpg   340w
+                "
+                sizes="
+                (min-width:1200px) and (max-width:2400px) 340px,
+                (min-width: 2400px) 720px
+                "
               />
               <h3 class="what-we-do-list__content">Rozwiązania graficzne</h3>
             </li>

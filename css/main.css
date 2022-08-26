@@ -204,10 +204,19 @@ address {
   .header-contacts-list__link:hover, .header-contacts-list__link:focus {
     color: #2196f3;
   }
-  .header-contacts-list__icon {
+  .header-contacts-list__icon-mail {
     fill: currentColor;
     margin-right: 10px;
     display: flex;
+    width: 14px;
+    height: 10px;
+  }
+  .header-contacts-list__icon-phone {
+    fill: currentColor;
+    margin-right: 10px;
+    display: flex;
+    width: 10px;
+    height: 14px;
   }
   .header-contacts-list__icon--alignment {
     margin-top: 2px;
@@ -236,6 +245,19 @@ address {
     flex-direction: row;
     align-items: center;
     gap: 30px;
+  }
+  .header-contacts-list__icon-mail {
+    fill: currentColor;
+    margin-right: 10px;
+    display: flex;
+    width: 16px;
+    height: 12px;
+  }
+  .header-contacts-list__icon-phone {
+    fill: currentColor;
+    margin-right: 10px;
+    display: flex;
+    height: 16px;
   }
 }
 .hero {
