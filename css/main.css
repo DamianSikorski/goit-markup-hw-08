@@ -797,7 +797,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: relative;
-  padding: 40px;
+  padding: 20px;
 }
 .modal-window__header {
   font-weight: 700;
@@ -805,7 +805,7 @@ address {
   letter-spacing: 0.03em;
   line-height: 1.15;
   text-align: center;
-  width: 370px;
+  width: 300px;
 }
 .modal-window__button {
   padding: 10px 76px;
@@ -818,7 +818,7 @@ address {
   position: absolute;
 }
 .modal-window__form {
-  width: 370px;
+  width: 300px;
 }
 
 .modal-labels {
@@ -834,7 +834,7 @@ address {
   position: relative;
 }
 .modal-labels__input {
-  width: 370px;
+  width: 300px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -856,7 +856,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-labels__textarea {
-  width: 370px;
+  width: 300px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -884,7 +884,7 @@ address {
 }
 .checkbox-label:before {
   position: absolute;
-  bottom: 1px;
+  bottom: 7px;
   left: 0px;
   content: "";
   width: 16px;
@@ -911,8 +911,31 @@ address {
   background-position: center;
 }
 
+@media screen and (min-width: 480px) {
+  .modal-window {
+    padding: 40px;
+  }
+  .modal-window__header {
+    width: 370px;
+  }
+  .modal-window__form {
+    width: 370px;
+  }
+  .modal-labels__input {
+    width: 370px;
+  }
+  .modal-labels__textarea {
+    width: 370px;
+  }
+  .checkbox-label:before {
+    bottom: 1px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-window__form {
+    width: auto;
+  }
+  .modal-window__header {
     width: auto;
   }
   .modal-labels__input {
