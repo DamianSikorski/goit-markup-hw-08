@@ -890,7 +890,7 @@ address {
 }
 .checkbox-label:before {
   position: absolute;
-  bottom: 2px;
+  bottom: 6px;
   left: 0px;
   content: "";
   width: 16px;
@@ -917,6 +917,11 @@ address {
   background-position: center;
 }
 
+@media screen and (min-width: 442px) {
+  .checkbox-label:before {
+    bottom: 1px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-window__form {
     max-width: 448px;
@@ -933,6 +938,7 @@ address {
   .checkbox-label {
     font-size: 14px;
     padding-left: 36px;
+    margin-right: 15px;
   }
   .checkbox-label:before {
     bottom: 1.5px;
