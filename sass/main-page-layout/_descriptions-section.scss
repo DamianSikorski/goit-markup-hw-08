@@ -1,3 +1,8 @@
+.descriptions-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .descriptions-list {
   display: flex;
   flex-direction: column;
@@ -36,6 +41,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .descriptions-section {
+    padding-bottom: 45px;
+  }
+
   .descriptions-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,6 +81,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .descriptions-section {
+    padding-top: 94px;
+    padding-bottom: 0px;
+  }
+
   .descriptions-list {
     flex-direction: row;
     flex-wrap: wrap;

@@ -130,15 +130,19 @@
             >
           </li>
         </ul>
-        <button class="menu-toggle open-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-toggle__icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <section class="nav-mobile-section">
+      <section class="menu-container js-menu-container" id="mobile-menu">
         <button
-          class="circular-button nav-mobile-section__circular-button close-menu"
+          class="circular-button menu-container__circular-button js-close-menu"
         >
           <svg width="19" height="19">
             <use href="images/icons.svg#icon-close-mobile"></use>
@@ -203,7 +207,7 @@
           </button>
         </div>
       </section>
-      <section class="section">
+      <section class="descriptions-section">
         <div class="container">
           <ul class="descriptions-list">
             <li>

@@ -54,22 +54,30 @@
           </li>
           <li>
             <a class="header-contacts-list__link" href="tel:+48111111111">
-              <svg class="header-contacts-list__icon-phone" width="10" height="14">
+              <svg
+                class="header-contacts-list__icon-phone"
+                width="10"
+                height="14"
+              >
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
             >
           </li>
         </ul>
-        <button class="menu-toggle open-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-toggle__icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <section class="nav-mobile-section">
+      <section class="menu-container js-menu-container" id="mobile-menu">
         <button
-          class="circular-button nav-mobile-section__circular-button close-menu"
+          class="circular-button menu-container__circular-button js-close-menu"
         >
           <svg width="19" height="19">
             <use href="images/icons.svg#icon-close-mobile"></use>

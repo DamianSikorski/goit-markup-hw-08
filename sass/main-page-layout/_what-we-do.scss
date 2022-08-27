@@ -1,3 +1,5 @@
+
+
 .what-we-do-list {
   display: flex;
   text-align: center;
@@ -26,8 +28,11 @@
 .hide-mobile {
   display: none;
 }
+
+
 @media screen and(min-width: 1200px) {
   .hide-mobile {
-    display: unset;
+    display: block;
   }
+ 
 }
