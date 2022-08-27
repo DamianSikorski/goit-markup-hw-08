@@ -269,11 +269,11 @@ address {
 .hero__header {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.66;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: #ffffff;
   margin-bottom: 30px;
-  max-width: 405px;
+  max-width: 365px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -363,7 +363,7 @@ address {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    width: 800px;
+    width: 738px;
     margin-left: auto;
     margin-right: auto;
   }
