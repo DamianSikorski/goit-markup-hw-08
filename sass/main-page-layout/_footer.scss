@@ -85,7 +85,8 @@
   place-items: center;
 
   &__input {
-    width: 308px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -131,11 +132,6 @@
     transform: scale(1.03);
   }
 }
-@media screen and (min-width: 480px) {
-  .newsletter-form__input {
-    width: 358px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .container--wrap {
@@ -155,8 +151,11 @@
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 109px;
-    padding-left: 109px;
+    padding-left: 63px;
+    padding-right: 63px;
+  }
+  .newsletter-form__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -165,6 +164,9 @@
   }
   .newsletter-form {
     flex-direction: row;
+    &__input {
+      width: 358px;
+    }
   }
   .newsletter-button {
     margin-top: 0;
