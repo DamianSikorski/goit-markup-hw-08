@@ -263,10 +263,6 @@ address {
     height: 16px;
   }
 }
-#current-side {
-  color: #2196f3;
-}
-
 .hero {
   padding-bottom: 118px;
   padding-top: 118px;
@@ -1042,6 +1038,10 @@ address {
     gap: 10px;
   }
 }
+.current-side {
+  color: #2196f3;
+}
+
 .buttons-section {
   padding-top: 60px;
   padding-bottom: 40px;
